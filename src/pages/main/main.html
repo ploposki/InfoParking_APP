@@ -1,0 +1,16 @@
+<ion-content *ngIf="device" padding>
+  <div *ngIf="!auth" >
+    <ion-list>
+      <ion-item>
+        <ion-label color="primary" floating>Usuário</ion-label>
+        <ion-input [(ngModel)]='login.login'></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Senha</ion-label>
+        <ion-input [(ngModel)]='login.password'></ion-input>
+      </ion-item>
+      <div hidden></div>
+    </ion-list>
+    <button ion-button full (click)="loginSubmit(login)">Entrar</button>
+  </div>
+</ion-content>

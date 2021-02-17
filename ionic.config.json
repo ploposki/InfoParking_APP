@@ -1,0 +1,7 @@
+{
+  "name": "info-parking",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
